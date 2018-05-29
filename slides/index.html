@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Introduction to HTML & CSS</title>
+    <link rel="stylesheet" href="styles/reveal.css">
+	<link rel="stylesheet" href="styles/theme/white.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Introduction to HTML & CSS</h1>
+            </section>
+            <section>
+                <h2>Tools</h2>
+                <ul>
+                    <li>Browser - Chrome, Firefox, Internet Explorer</li>
+                    <li>Text Editor - Visual Studio Code, Sublime Text & Atom</li>
+                </ul>
+            </section>
+            <section>
+              <section>
+                <h2>Tag Structure</h2>
+                <pre><code>&lt;tag&gt;Content&lt;/tag&gt;</code></pre>
+              </section>
+              <section>
+                <h2>Tag Structure</h2>
+                <pre><code>&lt;tag attribute="value"&gt;Content&lt;/tag&gt;</code></pre>
+              </section>
+            </section>
+            <section>
+                <pre>
+                    <code>
+                        &lt;!doctype html&gt;
+                        &lt;html&gt;
+                          &lt;head&gt;
+                            &lt;title&gt;My Website&lt;/title&gt;
+                          &lt;/head&gt;
+                          &lt;body&gt;
+                            Hello, World!	
+                          &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                </pre>
+            </section>
+            <section>
+              <section>
+                <h1>typography</h1>
+              </section>
+              <section>
+                <h2>Paragraph</h2>
+                <pre><code>&lt;p&gt;This is paragraph Content&lt;/p&gt;</code></pre>
+              </section>
+              <section>
+                <h2>Headings</h2>
+                <pre><code>
+                  &lt;h1&gt;This is heading level 1&lt;/h1&gt;
+                  &lt;h2&gt;This is heading level 2&lt;/h2&gt;
+                  &lt;h3&gt;This is heading level 3&lt;/h3&gt;
+                  &lt;h4&gt;This is heading level 4&lt;/h4&gt;
+                  &lt;h5&gt;This is heading level 5&lt;/h5&gt;
+                  &lt;h6&gt;This is heading level 6&lt;/h6&gt;
+                </code></pre>
+              </section>
+              <section>
+                <h2>Headings</h2>
+                <h1>heading level 1</h1>
+                <h2>heading level 2</h2>
+                <h3>heading level 3</h3>
+                <h4>heading level 4</h4>
+                <h5>heading level 5</h5>
+                <h6>heading level 6</h6>
+              </section>
+            </section>
+            <section><!--lists-->
+              <section>
+                <h1>Lists</h1>
+              </section>
+              <section>
+                <h2>Unordered Lists</h2>
+                <ul>
+                  <li>Item 1</li>
+                  <li>Item 2</li>
+                </ul>
+                <pre>
+                  <code>
+                    &lt;ul&gt;
+                      &lt;li&gt;Item 1&lt;/li&gt;
+                      &lt;li&gt;Item 2&lt;/li&gt;
+                    &lt;/ul&gt;
+                  </code>
+                </pre>
+              </section>
+              <section>
+                  <h2>Ordered Lists</h2>
+                  <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                  </ol>
+                  <pre>
+                    <code>
+                      &lt;ol&gt;
+                        &lt;li&gt;Item 1&lt;/li&gt;
+                        &lt;li&gt;Item 2&lt;/li&gt;
+                      &lt;/ol&gt;
+                    </code>
+                  </pre>
+                </section>
+                <section>
+                  <h2>Description List</h2>
+                  <dl>
+                    <dt>Description Term</dt>
+                    <dd>Description</dd>
+                  </dl>
+                  <pre>
+                    <code>
+                      &lt;dl&gt;
+                        &lt;dt&gt;Description Term&lt;/dt&gt;
+                        &lt;dd&gt;Description&lt;/dd&gt;
+                      &lt;/dl&gt;
+                    </code>
+                  </pre>
+                </section> 
+            </section>
+            <section><!--Images-->
+              <h2>Images</h2>
+              <pre><code>&lt;img src="/images/logo.png" alt="Accesibility information about the image" width="200" height="200"&gt;</code></pre>
+            </section>
+            <section><!--Anchor tag-->
+              <section>
+                <h2>Anchor tag</h2>
+                <pre><code>&lt;a href="address of linked file"&gt;Text for link&lt;/a&gt;</code></pre>
+              </section>
+              <section>
+                <h2>Absolute Path</h2>
+                <pre><code>&lt;a href="http://geico.com/claims.html"&gt;Text for link&lt;/a&gt;</code></pre>
+              </section>
+              <section>
+                  <h2>Relative Path</h2>
+                  <pre><code>&lt;a href="/claims.html"&gt;Text for link&lt;/a&gt;</code></pre>
+              </section>
+              <section>
+                <h2>New Window</h2>
+                <pre><code>&lt;a href="http://geico.com/claims.html" target="_blank"&gt;Text for link&lt;/a&gt;</code></pre>
+                <em>*should be used in limited instances as it caused user confusion</em>
+              </section>
+              <section>
+                  <h2>Mail Links</h2>
+                  <pre><code>&lt;a href="mailto:me@geico.com"&gt;Email me&lt;/a&gt;</code></pre>
+                </section>
+                <section>
+                  <h2>Phone</h2>
+                  <pre><code>&lt;a href="tel:+01-555-555-1212" target="_blank"&gt;Call us at (555)555-1212&lt;/a&gt;</code></pre>
+                </section>
+            </section>
+            <section>
+              <section>
+                <h2>Tables</h2>
+              </section>
+              <section>
+                <ul>
+                  <li>&lt;table&gt;</li>
+                  <li>&lt;tr&gt; - Table row</li>
+                  <li>&lt;th&gt; - Table header</li>
+                  <li>&lt;td&gt; - Table data</li>
+                </ul>
+              </section>
+              <section>
+                <pre>
+                  <code>
+                      &lt;table border="1"&gt;
+                        &lt;tr&gt;
+                          &lt;th&gt;Item&lt;/th&gt;
+                          &lt;th&gt;Quantity&lt;/th&gt;
+                          &lt;th&gt;Rate&lt;/th&gt;
+                          &lt;th&gt;Cost&lt;/th&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                          &lt;td&gt;Candy&lt;/td&gt;
+                          &lt;td&gt;10&lt;/td&gt;
+                          &lt;td&gt;$.50&lt;/td&gt;
+                          &lt;td&gt;$5.00&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                          &lt;td&gt;Toothpaste&lt;/td&gt;
+                          &lt;td&gt;2&lt;/td&gt;
+                          &lt;td&gt;$3.00&lt;/td&gt;
+                          &lt;td&gt;$6.00&lt;/td&gt;
+                        &lt;/tr&gt;
+                      &lt;/table&gt;
+                  </code>
+                </pre>
+              </section>
+              
+            </section>
+        </div>
+    </div>
+    <script src="js/reveal.js"></script>
+    <script>
+        Reveal.initialize();
+    </script>
+    
+</body>
+</html>
