@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Introduction to HTML & CSS</title>
     <link rel="stylesheet" href="styles/reveal.css">
-	<link rel="stylesheet" href="styles/theme/white.css">
+    <link rel="stylesheet" href="styles/theme/white.css">
 </head>
 <body>
     <div class="reveal">
@@ -193,8 +193,89 @@
                       &lt;/table&gt;
                   </code>
                 </pre>
+              </section>    
+            </section>
+            <section>
+              <h2>CSS Structure</h2>
+              <pre>
+                <code>
+                  selector { property: value};
+                </code></pre>
+            </section>
+            <section>
+              <section>
+                <h2>Styling Methods</h2>
               </section>
-              
+              <section>
+                <h2>inline style</h2>
+                <pre>
+                  <code>
+                    &lt;p style="color: blue;"&gt;Content&lt;p&gt;
+                  </code>
+                </pre>
+              </section>
+              <section>
+                <h2>Embedded Styles</h2>
+                <pre>
+                  <code>
+                    &lt;head&gt;
+                      &lt;style&gt;
+                        p {color: blue;}
+                      &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;p"&gt;Content&lt;p&gt;
+                  </code>
+                </pre>
+              </section>
+              <section>
+                <h2>Linked Styles</h2>
+                index.html
+                <pre>
+                  <code>
+                    &lt;head&gt;
+                      &lt;link rel="stylesheet" href="style.css"&gt;
+                    &lt;/head&gt;
+                    &lt;p"&gt;Content&lt;p&gt;
+                  </code>
+                </pre>
+                styles.css
+                <pre>
+                  <code> 
+                    p {color: blue;}
+                  </code>
+                </pre>
+              </section>
+            </section>
+            <section>
+              <section>
+                <h1>CSS Selectors</h1>
+              </section>
+              <section>
+                <h2>Specificity</h2>
+                <img src="imgs/specificity-calculationbase.png" alt="CSS Specificity Chart">
+              </section>
+              <section>
+                <h2>Box Model</h2>
+                <img src="imgs/box-model-standard-small.png" alt="Box Model">
+              </section>
+              <section>
+                <div style="width: 300px; height: 200px; border: black 1px solid">Box 1</div>
+                <div style="width: 300px; height: 200px; border: black 1px solid; padding: 50px;">Box 2</div>
+              </section>
+              <section>
+                  <div style="width: 300px; height: 200px; border: black 1px solid; box-sizing: border-box">Box 1</div>
+                  <div style="width: 300px; height: 200px; border: black 1px solid; padding: 50px; box-sizing: border-box">Box 2</div>
+                </section>
+            </section>
+            <section>
+              <section>
+                <pre>
+                  <code>
+                      @media screen and (min-width: 992px) {
+                        /*changes that apply*/
+                      }
+                  </code></pre>
+              </section>
             </section>
         </div>
     </div>
