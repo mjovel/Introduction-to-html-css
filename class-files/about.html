@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Maple Street Bakery - About Us</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+      <div>
+            <a href="#primary-nav" class="sr-only">Skip to primary navigation</a>
+      </div>
       <header>
             <h1>Maple Street Bakery</h1>
-            <nav>
+            <nav id="primary-nav" class="primary-nav">
                   <ul>
                         <li><a href="about.html">About</a></li>
                         <li><a href="menu.html">Menu</a></li>
@@ -18,21 +23,26 @@
             </nav>
             <img src="imgs/about-image.jpg" alt="Picture of Maple Street Bakery" width="800">
       </header>
-    <article>
-      <h1>About Us</h1>
-      <p>Street Bakery is a locally-owned and locally sourced bakery</p>
-      <p>We’re completely dedicated to having fun, baking amazingly delicious bread, making you feel warm and welcomed, and having you feel nurtured when you’re here.  We keep our menus simple in choice, but deep in flavor and character.  We create natural, healthy food from scratch every day that is absolutely delicious and makes you feel good after you eat it, not bogged down!</p>
-      <p>Our space is a big renovated garage in downtown, where it’s bright and warm in the winter, and breezy and open in the summer.  The open space lets you see the bakers in action, creating our European style breads and pastries.  Join us for breakfast and lunch!</p>
-    </article>
-    <aside>
-            <p>Maple Street Bakery<br>
-            123 Maple Street<br>
-            Burlington, Vermont 05401</p>
-            
-            <p>Near the corner of St. Paul Street and Maple Street</p>
-            
-            <p>(802) 555-5555</p>
-    </aside>
+    <div class="main-column">
+          <article>
+            <h1 class="page-title">About Us</h1>
+            <p><strong>Maple Street Bakery</strong> is a locally-owned and locally sourced bakery</p>
+            <p>We’re completely dedicated to having fun, baking amazingly delicious bread, making you feel warm and welcomed, and having you feel nurtured when you’re here.  We keep our menus simple in choice, but deep in flavor and character.  We create natural, healthy food from scratch every day that is absolutely delicious and makes you feel good after you eat it, not bogged down!</p>
+            <p>Our space is a big renovated garage in downtown, where it’s bright and warm in the winter, and breezy and open in the summer.  The open space lets you see the bakers in action, creating our European style breads and pastries.  Join us for breakfast and lunch!</p>
+          <h2>our story</h2>
+      </article>
+          <hr>
+          <aside><!--Start of Address Aside-->
+                  <p>Maple Street Bakery<br>
+                  123 Maple Street<br>
+                  Burlington, Vermont 05401</p>
+                  
+                  <p><em>Near the corner of St. Paul Street and Maple Street</em></p>
+                  
+                  <p>(802) 555-5555</p>
+                  <a href="#">Send us a message</a>
+          </aside><!--End of Address Aside-->
+    </div>
     <footer>
           <p>Maple Street Bakery 2018</p>
     </footer>
