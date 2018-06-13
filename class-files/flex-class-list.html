@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Class list</title>
+    <style>
+* {box-sizing: border-box;}
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2d2926;
+}
+
+a {
+    color: #2d2926;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: #c3c5c6;
+}
+
+
+/* CLASS LIST COMPONENT */
+.class-list {
+}
+
+.class {
+    max-width: 250px;
+    margin: 15px auto;
+    border: 1px solid #c3c5c6;
+    box-shadow: #c3c5c6 1px 1px;
+
+}
+.class-name {
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+.class img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.class-description {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* button */
+
+.btn {
+    background-color: #2d2926;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    width: 80%;
+    border-radius: 5px;
+    margin: 10px auto;
+    font-size: .8em;
+    font-weight: normal;
+}
+.btn:hover {
+    background-color: #eaebeb;
+    color: #2d2926;
+    text-decoration: none;
+    
+    
+}
+    
+    </style>
+</head>
+<body>
+        <div class="class-list">
+               
+            <div class="class">
+                <h2 class="class-name">Donuts</h2>
+                <img class="class-img" src="imgs/donuts.jpg" alt="">
+                <p class="class-description">What? Did someone say donuts? Come join us in making these tasty treats. A perfect way to start your Sunday morning and coffee's on us!</p>
+                <a class="btn" href="#">More Info</a>
+            </div>
+            <div class="class">
+                <h2 class="class-name">French Macarons</h2>
+                <img class="class-img" src="imgs/macarons.png" alt="">
+                <p class="class-description">This one sells out quickly so grab it while you can! Join us as we master this very fickle, yet delectable treat.</p>
+                <a class="btn" href="#">More Info</a>
+            </div>    
+            <div class="class">
+                <h2 class="class-name">Pies and Tarts</h2>
+                <img class="class-img" src="imgs/Pies-tarts.jpg" alt="">
+                <p class="class-description">In this baking class we will start with the classic pie crust or pâte brisée. Recipes are seasonal with berries and summer fruits showing up in the warmer months, while we rely upon the autumn harvest of apples, pumpkins, and pecans in the fall and winter.</p>
+                <a class="btn" href="#">More Info</a>
+            </div>    
+            <div class="class">
+                <h2 class="class-name">Homemade Bread</h2>
+                <img class="class-img" src="imgs/homemade-bread.jpg" alt="">
+                <p class="class-description">In this more advanced class we will create traditional breads using three classic starters: Sourdough, Biga, and Poolish. These will be used to create delicious Sourdough Baguettes, Rosemary Rolls, and a fantastic (not your average) White Bread.</p>
+                <a class="btn" href="#">More Info</a>
+            </div>    
+            <div class="class">
+                <h2 class="class-name">Quick Breads</h2>
+                <img class="class-img" src="imgs/quick-breads.jpg" alt="">
+                <p class="class-description">In this introductory course to baking techniques, we will make Chocolate Cherry Scones, Carrot Muffins, and Sour Cream Coffee Cake. A tasty way to spend a morning in the kitchen!</p>
+                <a class="btn" href="#">More Info</a>
+            </div>
+               
+            <div class="class">
+                <h2 class="class-name">Puff Pastry</h2>
+                <img class="class-img" src="imgs/puff-pastry.jpg" alt="">
+                <p class="class-description">This course focuses on the techniques necessary to make laminated doughs of puff pastry. We will try our hands at Mille Feuille, Palmiers, and Tart Tatins in the kitchen - but you will be able to take home your new skill and apply it to more creations such as Croissants, Danish Doughs, and many others!</p>
+                <a class="btn" href="#">More Info</a>
+            </div>        
+        </div>   
+</body>
+</html>
