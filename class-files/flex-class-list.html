@@ -60,11 +60,27 @@ a:visited {
     display: flex;
     flex-direction: column;
     /*flex: 1 0 0%;*/
+    transition: transform 2s ease-in .2s;
 
 }
+.class1:hover {
+    transform: rotate(-10deg);
+}
+.class2:hover{
+    transform: translateY(25px);
+}
 
+.class3:hover {
+    transform: scale(1.5)
+}
+.class4:hover {
+    transform: skew(20deg);
+}
 .class5 {
-    order: -1;
+    /*order: -1;*/
+}
+.class5:hover {
+    transform: scale(1.5) rotate(-5deg) translate(50px, 30px);
 }
 .class-name {
     font-size: 1.2em;
@@ -106,6 +122,34 @@ a:visited {
 }
 .class .btn {
     margin-top: auto;
+}
+
+@keyframes colors {
+    0% {background-color: red}
+    20% {background-color: orange}
+    40% {background-color: yellow}
+    60% {background-color: green}
+    80% {background-color: blue}
+    100% {background-color: purple}
+}
+
+body {
+    /*animation-name: colors;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;*/
+
+    /*animation: colors 2s linear infinite alternate;*/
+}
+
+@keyframes slide {
+    from {margin-left: 100%}
+    to {margin-left: 0%}
+}
+
+.class-list {
+    animation: slide 2s ease-out 1  normal;
 }
     
     </style>

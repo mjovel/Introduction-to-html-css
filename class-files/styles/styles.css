@@ -68,8 +68,15 @@ a:visited {
     padding-left: 20px;*/
     text-transform: uppercase;
     color: #2d2926;
+    background-color: #eaebeb;
     text-decoration: none;
     font-weight: bold;
+    transition-property: background-color;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
+    transition-delay: .2s;
+    /* transition: property duration timing-function delay*/
+    transition: background-color .3s ease-in .2s;
 }
 
 .primary-nav a:hover {
